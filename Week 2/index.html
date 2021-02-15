@@ -6,43 +6,57 @@
     <title>Title</title>
 </head>
 <body>
-<h1 id="top"> Les hyperliens </h1>
+<h1> Les images </h1>
 
-<p> L'élément HTML a (pour anchor) définit un hyperlien vers un autre endroit de la même page, vers une autre page du
-    site web ou vers une page externe sur le Web. </p>
+<p> Les images pour le web sont en mode RVB et résolution de 72 dpi, celles pour le print en mode CMJN et résolution de
+    300dpi.</p>
 
-<p> L'élément HTML a (pour anchor) définit un hyperlien vers un autre endroit de la même page, vers une autre page du
-    site web ou vers une page externe sur le Web.</p>
-
-<p> Pour créer un lien externe, on va devoir indiquer l’URL complète de la destination du lien. </p>
-
-<p> L'élément a utilise plusieurs attributs : </p>
-
+<p>Les formats utilisés sont :</p>
 <ul>
-    <li> L'attribut <strong>href</strong> : cet attribut est obligatoire et contient l'URL de destination.</li>
-    <li> L'attribut <strong> title </strong> : il sert à afficher une infobulle au passage de la souris sur l'hyperlien.</li>
-    <li> L'attribut <strong> target </strong> : il permet de choisir où va s'ouvrir la page de destination. Un attribut
-        <em>target="_blank"</em>
-        spécifie que le lien s'ouvre dans un nouvel onglet ou une nouvelle page.
+    <li>Le format <strong>jpg </strong>: il permet de compresser le poids de l'image tout en gardant une bonne qualité
     </li>
+    <li> Le format <strong>png </strong>: il permet degère la transparence, a un très bon taux de compression tout en
+        conservant une
+        bonne qualité
+        d'image.
+    </li>
+    <li>Le format <strong>gif </strong>: c'est un ancien format d'image, qui a l'avantage de permettre l'animation
+        d'images,
+        mais il ne
+        gère que 256 couleurs.
+    </li>
+
 </ul>
 
-<p> Il existe différents types d'hyperliens : </p>
+<p> L'élément HTML img permet d'insérer une images en tant que contenu dans une page HTML. L'insertion d'une image comme
+    élément de décoration devra être effectué en CSS.</p>
+
+<p> Cet élément utilise plusieurs attributs :</p>
 
 <ul>
-    <li> Un site internet : <a href="https://www.google.com" target="_blank">Google</a></li>
-    <li> Une autre page du site internet : <a href="https://about.udemy.com/" target="_blank">Udemy Contact us</a></li>
-    <li> Une adresse email : <a href="mailto:elidoom88@gmail.com?subject=Mail from Our Site" target="_blank">Email me</a></li>
-    <li> Un numéro de téléphone : <a href="tel:06 19 24 17 10">Tel:06 19 24 17 10</a></li>
-    <li> Une ancre sur la page : <a href="#top">Les hyperliens</a> Ce type de lien est souvent utilisé dans la
-        navigation sur les sites
-        internet one-page ou pour revenir en haut de la page.
+    <li>L'attribut <strong> src </strong> : cet attribut est obligatoire et contient le chemin de l'image que l'on
+        souhaite
+        afficher.
+    </li>
+    <li>L'attribut <strong> alt </strong> : cet attribut, bien que non obligatoire, est recommandé pour des raisons
+        d'accessibilité
+        et de
+        référencement naturel. Il contient une description textuelle de l'image.
+    </li>
+    <li>L'attribut <strong> title </strong>: il n'a pas vocation à remplacer l'attribut alt et si les 2 attributs sont
+        définis
+        il est
+        conseillé d'utiliser des valeurs différentes. Il sert à afficher une infobulle au passage de la souris sur
+        l'image.
+    </li>
+    <li>Les attributs <strong>width</strong> et <strong>height</strong> : ils permettent d'indiquer les dimensions
+        intrinsèques de
+        l'image pour
+        s'assurer
+        qu'elle occupe un espace stable lors du chargement.
     </li>
 </ul>
-
-<p> Il est aussi possible de mettre un hyperlien sur une image : </p>
-
-<img src="img/drink.jpg" alt="Image of product-soft drink" height="300px" width="300px">
+<img src="img/website.jpg" alt="Girl in a jacket" width="400" height="266">
 
 <script src="javascript/script.js"></script>
 </body>
