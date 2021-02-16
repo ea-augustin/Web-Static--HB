@@ -4,17 +4,19 @@ body {
 
 }
 
+/*change the color of h1*/
 h1 {
     color: #32CBDD;
 }
-
+/*change the color of h2*/
 h2 {
     color: #32CBDD;
 }
-
+/*change the color of h3*/
 a {
     color: #028DB6;
 }
+/*Remove the underline from abbr*/
 abbr[title] {
     border-bottom: none !important;
     cursor: inherit !important;
