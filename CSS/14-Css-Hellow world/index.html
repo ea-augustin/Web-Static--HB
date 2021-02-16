@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap" rel="stylesheet">
     <title>CSS</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
 
 <!--Main content -->
 <main>
-    <h1 id="top"> Hello World</h1>
+    <h1 id="top"> Hello World!</h1>
 
     <!--section one starts here-->
     <section>
@@ -28,7 +30,8 @@
         </p>
 
         <p>La tradition d'utiliser l'expression <em>Hello World</em> comme premier message de test a été initiée par lee
-            livre « The C Programming Language » de <strong>Brian Kernighan </strong>et <strong>Dennis Ritchie</strong>.
+            livre &laquo;&nbsp;The C Programming Language &nbsp;&raquo; de <strong>Brian Kernighan </strong>et <strong>Dennis
+                Ritchie</strong>.
         </p>
 
     </section>
@@ -41,17 +44,18 @@
 
         <p>Pour développer notre premier site internet, nous allons utiliser :</p>
         <ol>
-            <li><a href="https://www.w3schools.com/html/" target="_blank">Le HTML</a></li>
-            <li><a href="https://css-tricks.com/almanac/" target="_blank">La CSS</a></li>
+            <li><a href="#html">Le HTML</a></li>
+            <li><a href="#css">La CSS</a></li>
         </ol>
         <h3>Les éditeurs de texte</h3>
 
         <p>Nous avons le choix entre :</p>
         <ul>
-            <li><a href="http://brackets.io/" target="_blank">Brackets</a></li>
-            <li><a href="https://atom.io/" target="_blank">Atom</a></li>
-            <li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a></li>
-            <li><a href="https://www.adobe.com/products/dreamweaver.html" target="_blank">Dreamweaver</a></li>
+            <li><a href="http://brackets.io/" target="_blank" title="Download">Brackets</a></li>
+            <li><a href="https://atom.io/" target="_blank" title="Download">Atom</a></li>
+            <li><a href="https://www.sublimetext.com/" target="_blank" title="Download">Sublime Text</a></li>
+            <li><a href="https://www.adobe.com/products/dreamweaver.html" target="_blank"
+                   title="Download">Dreamweaver</a></li>
         </ul>
         <p>Il faudra être capable de rechercher des informations sur un moteur de recherche comme <a
                 href="https://www.google.com" target="_blank">Google</a>.</p>
@@ -60,19 +64,30 @@
     <!--section three starts here-->
     <section>
         <h2>Mes premiers pas sur le web</h2>
-        <h3>Le HTML</h3>
-        <img src="img/html5.png" alt="Girl in a jacket" width="200" height="200">
+        <div id="html">
+            <h3>Le HTML</h3>
+            <img src="img/html5.png" alt="Html5 image" width="200" height="200">
 
-        <p>Le langage HTML a été créé en 1991. C'est un langage de balises qui va nous servir à structurer le contenu de
-            notre page internet.</p>
-        <p>Le contenu d'une page HTML est structuré en titres, sous-titres, paragraphes, listes, ...</p>
-        <p>Le HTML va également nous permettre d'insérer des éléments comme des images et des hyperliens.</p>
+            <p>Le langage <abbr title="HyperText Markup Language">HTML</abbr> a été créé en 1991. C'est un langage de
+                balises qui va nous servir à structurer le
+                contenu de
+                notre page internet.</p>
+            <p>Le contenu d'une page <abbr title="HyperText Markup Language">HTML</abbr> est structuré en titres,
+                sous-titres, paragraphes, listes, ...</p>
+            <p>Le <abbr title="HyperText Markup Language">HTML</abbr>va également nous permettre d'insérer des éléments
+                comme des images et des hyperliens.</p>
+        </div>
         <hr>
-        <h3>La CSS</h3>
-        <img src="img/css3.png" alt="Girl in a jacket" width="200" height="224">
-        <p>La CSS est un langage informatique utilisé pour mettre en forme les fichiers HTML ou XML. Créée en 1996, la
-            CSS a l'avantage de permettre la séparation de la mise en forme et du contenu.
-        </p>
+        <div id="css">
+            <h3>Le CSS</h3>
+            <img src="img/css3.png" alt="Css image" width="200" height="224">
+            <p>La <abbr title="Cascading Style Sheets">CSS</abbr> est un langage informatique utilisé pour mettre en
+                forme les fichiers HTML ou XML. Créée en 1996,
+                la
+                <abbr title="Cascading Style Sheets">CSS</abbr> a l'avantage de permettre la séparation de la mise en
+                forme et du contenu.
+            </p>
+        </div>
     </section>
 
     <!-- Back to the top-->
