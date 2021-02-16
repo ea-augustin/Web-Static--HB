@@ -20,30 +20,35 @@
     <br><br>
 </form>
 
-<!--select form with optgroup feature-->
+<!--select form with optgroup with fieldset feature-->
 <form action="#" method="get">
-    <label for="countries">Choose a Region:</label>
-    <select name="countries" id="countries">
-        <optgroup label="Africa">
-            <option value=" South Africa"> South Africa</option>
-            <option value="Ghana">Ghana</option>
-            <option value="Senegal">Senegal</option>
-        </optgroup>
+    <fieldset>
+        <legend>Choose your favorite region</legend>
+        <br>
+        <label for="countries">Choose a Region:</label>
+        <select name="countries" id="countries">
+            <optgroup label="Africa">
+                <option value=" South Africa"> South Africa</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Senegal">Senegal</option>
+            </optgroup>
 
-        <optgroup label="North America">
-            <option value=" South Dakota"> South Dakota</option>
-            <option value="New York">New York</option>
-            <option value="Texas">Texas</option>
-        </optgroup>
+            <optgroup label="North America">
+                <option value=" South Dakota"> South Dakota</option>
+                <option value="New York">New York</option>
+                <option value="Texas">Texas</option>
+            </optgroup>
 
-        <optgroup label="Europe">
-            <option value="France">France</option>
-            <option value="Spain">Spain</option>
-            <option value="Italy">Italy</option>
-        </optgroup>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
+            <optgroup label="Europe">
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+            </optgroup>
+
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
 </form>
 <script src="javascript/script.js"></script>
 
