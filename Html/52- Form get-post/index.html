@@ -7,18 +7,24 @@
 </head>
 <body>
 <h2>HTML Forms</h2>
-
+<!-- A simple form -->
 <form action="#" method="get">
+    <!--  first div for firstname input-->
     <div>
         <label for="firstName">First name:</label><br>
         <input type="text" id="firstName" name="firstName" value=""><br>
     </div>
-
+    <!-- second div for lastName input-->
     <div>
         <label for="lastName">Last name:</label><br>
         <input type="text" id="lastName" name="lastName" value=""><br><br>
     </div>
-
+    <!--   Third div for a text area-->
+    <div>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+    </div>
+    <!-- last div for submit button-->
     <div>
         <input type="submit" value="Submit">
     </div>
