@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE dwwm_2021 [
+        <!ELEMENT dwwm_2021 (prenom+, nom, age, genre?, site_perso?, info_confinement, info_dev)>
+        <!-- DTD pour la civilité -->
+        <!ELEMENT prenom (#PCDATA)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT genre (masculin|feminin) >
+        <!ELEMENT masculin EMPTY >
+        <!ELEMENT feminin EMPTY >
+        <!ELEMENT site_perso (#PCDATA)>
+        <!-- DTD pour le confinement de 2020-->
+        <!ELEMENT info_confinement (nombre_de_personne, lieu)>
+        <!ELEMENT nombre_de_personne (nombre_adulte, nombre_enfant?)>
+        <!ELEMENT nombre_adulte (#PCDATA)>
+        <!ELEMENT nombre_enfant (#PCDATA)>
+        <!ELEMENT lieu (commune, type, surface, jardin)>
+        <!ELEMENT commune (#PCDATA)>
+        <!ELEMENT type (#PCDATA) >
+        <!ELEMENT surface (#PCDATA) >
+        <!ELEMENT jardin (jardin_presence, jardin_surface?) >
+        <!ELEMENT jardin_presence (#PCDATA)>
+        <!ELEMENT jardin_surface (#PCDATA) >
+        <!-- DTD pour les infos de dev -->
+        <!ELEMENT info_dev (langage_deja_utilise*, nombre_de_site_developpe?, exemple_de_site_developpe?)>
+        <!ELEMENT langage_deja_utilise (XML | HTML | CSS | SASS | LESSCSS | BOOTSTRAP | MATERIALIZE | FOUNDATION | JS | TYPESCRIPT | COFFEESCRIPT |JQUERY | ANGULARJS | NODEJS | REACTJS | VUEJS | ANGULAR | PHP | SYMFONY | LARAVEL | WORDPRESS )*>
+        <!ELEMENT XML EMPTY >
+        <!ELEMENT HTML EMPTY >
+        <!ELEMENT CSS EMPTY >
+        <!ELEMENT SASS EMPTY >
+        <!ELEMENT LESSCSS EMPTY >
+        <!ELEMENT BOOTSTRAP EMPTY >
+        <!ELEMENT MATERIALIZE EMPTY >
+        <!ELEMENT FOUNDATION EMPTY >
+        <!ELEMENT TYPESCRIPT EMPTY >
+        <!ELEMENT COFFEESCRIPT EMPTY >
+        <!ELEMENT JS EMPTY >
+        <!ELEMENT JQUERY EMPTY >
+        <!ELEMENT ANGULARJS EMPTY >
+        <!ELEMENT NODEJS EMPTY >
+        <!ELEMENT REACTJS EMPTY >
+        <!ELEMENT VUEJS EMPTY >
+        <!ELEMENT ANGULAR EMPTY >
+        <!ELEMENT PHP EMPTY >
+        <!ELEMENT SYMFONY EMPTY >
+        <!ELEMENT LARAVEL EMPTY >
+        <!ELEMENT WORDPRESS EMPTY >
+        <!ELEMENT nombre_de_site_developpe (#PCDATA) >
+        <!ELEMENT exemple_de_site_developpe (#PCDATA) >
+        ]>
+
+<dwwm_2021>
+    <!-- Civility-->
+    <prenom>Ezra</prenom>
+    <nom>Augustin</nom>
+    <age>36</age>
+    <genre>
+        <masculin/>
+    </genre>
+
+    <!-- In case of confinement -->
+    <info_confinement>
+        <nombre_de_personne>
+            <nombre_adulte>2</nombre_adulte>
+        </nombre_de_personne>
+
+        <lieu>
+            <commune>Andrézieux-Bouthéon</commune>
+            <type>Apart/Maison</type>
+            <surface>75m2</surface>
+            <jardin>
+                <jardin_presence>Oui</jardin_presence>
+                <jardin_surface>300m2</jardin_surface>
+            </jardin>
+        </lieu>
+    </info_confinement>
+
+    <!-- dev info -->
+    <info_dev>
+        <langage_deja_utilise>
+            <HTML/>
+            <CSS/>
+            <!-- beginner level in SASS -->
+            <SASS/>
+            <BOOTSTRAP/>
+            <JS/>
+            <JQUERY/>
+            <PHP/>
+            <LARAVEL/>
+            <WORDPRESS/>
+            <!-- beginner level in angular -->
+            <ANGULAR/>
+            <!-- beginner level in VUE JS -->
+            <VUEJS/>
+        </langage_deja_utilise>
+    </info_dev>
+
+</dwwm_2021>
