@@ -1,17 +1,20 @@
 /*Surround bold text with a red border*/
-b{
+b {
     border: 1px solid red;
 }
+
 /*Put the spans with a pink background color*/
-span{
+span {
     background-color: pink;
 }
+
 /*Frame paragraphs with a green border*/
-p{
+p {
     border: 1px solid green;
 }
+
 /*div with a light gray background color*/
 
-div{
-    background-color:lightgray;
+div {
+    background-color: lightgray;
 }
