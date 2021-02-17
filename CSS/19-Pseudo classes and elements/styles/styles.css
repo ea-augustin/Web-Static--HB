@@ -32,11 +32,11 @@ p::first-letter {
 /*add a margin to the h1*/
 h1:before{
     content:" ";
-    background-image:url("https://bitsofco.de/content/images/2017/03/icon_256.png");
     height: 16px;
     width: 16px;
     display: inline-block;
     margin-right: 6px;
+    background-image:url("https://bitsofco.de/content/images/2017/03/icon_256.png");
     background-size:cover;
 }
 

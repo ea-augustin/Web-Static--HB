@@ -1,0 +1,9 @@
+/*Added a new font via font face.*/
+@font-face{
+    font-family: "prompt";
+    src: url("../font/prompt.ttf");
+}
+span{
+    font-family: 'prompt', monospace;
+    font-size: 60px;
+}
