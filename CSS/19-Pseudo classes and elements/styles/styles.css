@@ -33,5 +33,6 @@ p::selection {
 }
 /*add a margin to the h1*/
 h1:before{
+    content:url("https://bitsofco.de/content/images/2017/03/icon_256.png");
     margin-left: 6px;
 }

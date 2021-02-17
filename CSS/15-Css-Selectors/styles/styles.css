@@ -1,28 +1,15 @@
-/*modify general background*/
-* {
-    background-color: white;
-}
-
-/*modify the body color, background and text*/
-body {
+/*modify the body and div color, background and text*/
+body, div {
     color: black;
     font-family: sans-serif;
     background-color: lightgray;
-}
-
-/*modify div background color and text*/
-
-div {
-    color: black;
-    background-color: lightgray;
-
-
 }
 
 /*paragraphs in container red*/
 #container p {
     color: red;
 }
+
 
 /*paragraphs direct children of container*/
 #container > p {
@@ -31,11 +18,11 @@ div {
 }
 
 /*paragraph after container*/
-.afterContainer {
+#container > h2 + p {
     color: green;
 }
 
-/*paragraphs directly following a level 2 title in uppercase*/
+/*paragraphs directly following a h2 in uppercase*/
 h2 + p {
     text-transform: uppercase;
 }
@@ -47,12 +34,14 @@ code ~ p {
 
 /*The div directly children of the body in yellow*/
 body > div {
-
-    color: yellow;
+    background-color: yellow;
 }
+
 
 /*Divs that directly follow a level 1 title with a green border*/
 h1 + div {
-    border-color: green;
-    border-style: solid;
+    /*border-color: green;*/
+    /*border-style: solid;*/
+    border: 1px solid green;
 }
+
