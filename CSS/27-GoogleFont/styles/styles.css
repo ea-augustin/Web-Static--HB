@@ -1,0 +1,9 @@
+/*Added a new font via google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+/*Adjusted my paragraph font family and size */
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
