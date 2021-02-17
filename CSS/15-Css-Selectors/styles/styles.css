@@ -1,0 +1,58 @@
+/*modify general background*/
+* {
+    background-color: white;
+}
+
+/*modify the body color, background and text*/
+body {
+    color: black;
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+/*modify div background color and text*/
+
+div {
+    color: black;
+    background-color: lightgray;
+
+
+}
+
+/*paragraphs in container red*/
+#container p {
+    color: red;
+}
+
+/*paragraphs direct children of container*/
+#container > p {
+
+    font-weight: bold;
+}
+
+/*paragraph after container*/
+.afterContainer {
+    color: green;
+}
+
+/*paragraphs directly following a level 2 title in uppercase*/
+h2 + p {
+    text-transform: uppercase;
+}
+
+/* change the color of paragraphs with a sibling element of code*/
+code ~ p {
+    color: pink;
+}
+
+/*The div directly children of the body in yellow*/
+body > div {
+
+    color: yellow;
+}
+
+/*Divs that directly follow a level 1 title with a green border*/
+h1 + div {
+    border-color: green;
+    border-style: solid;
+}
