@@ -4,7 +4,9 @@
     src: url("../font/prompt.ttf");
 }
 
-span {
+/*Adjusted my paragraph font family and size */
+p {
     font-family: 'prompt', monospace;
-    font-size: 60px;
+    font-size: 24px;
 }
+
