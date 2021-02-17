@@ -1,7 +1,4 @@
-/*modify general background*/
-* {
-    background-color: white;
-}
+
 /*Put all the links in pink*/
 
  a {
@@ -27,12 +24,19 @@ p::first-letter {
 
 }
 /*highlight selection */
-p::selection {
-    color: yellow;
+::selection {
+    background-color: yellow;
+    text-decoration:underline;
 
 }
 /*add a margin to the h1*/
 h1:before{
-    content:url("https://bitsofco.de/content/images/2017/03/icon_256.png");
-    margin-left: 6px;
+    content:" ";
+    background-image:url("https://bitsofco.de/content/images/2017/03/icon_256.png");
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 6px;
+    background-size:cover;
 }
+
