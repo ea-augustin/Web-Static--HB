@@ -1,0 +1,16 @@
+/*Added a new font via google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+/*Adjusted font family and size */
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+#box {
+    background-color: #71e8c1;
+    border: 15px solid  #c8c8c8;
+    margin: 50px;
+    width: 500px;
+}
+
