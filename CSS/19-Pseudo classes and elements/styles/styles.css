@@ -2,32 +2,36 @@
 * {
     background-color: white;
 }
+/*Put all the links in pink*/
 
-p > a {
+ a {
     color:pink;
 }
-
+/*add a hover to all the links and modify the font size*/
 a:hover{
     font-size:1.5rem;
     color:yellow;
 }
-
+/*change the color of the links visited*/
 a:visited{
     color:pink;
 }
+/*change the background-color of paragraphs on hover*/
 p:hover{
     background-color:red;
 }
 
+/*change the size of the first letter*/
 p::first-letter {
     font-size: 1.8rem;
 
 }
+/*highlight selection */
 p::selection {
     color: yellow;
 
 }
-
+/*add a margin to the h1*/
 h1:before{
-    margin-left: 600px;
+    margin-left: 6px;
 }
