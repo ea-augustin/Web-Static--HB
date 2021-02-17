@@ -1,0 +1,33 @@
+/*modify general background*/
+* {
+    background-color: white;
+}
+
+p > a {
+    color:pink;
+}
+
+a:hover{
+    font-size:1.5rem;
+    color:yellow;
+}
+
+a:visited{
+    color:pink;
+}
+p:hover{
+    background-color:red;
+}
+
+p::first-letter {
+    font-size: 1.8rem;
+
+}
+p::selection {
+    color: yellow;
+
+}
+
+h1:before{
+    margin-left: 600px;
+}
