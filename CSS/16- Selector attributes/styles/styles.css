@@ -1,0 +1,14 @@
+/*modify general background*/
+* {
+    background-color: white;
+}
+/*links with the target attribute present:*/
+[target]{
+    color:lightgreen;
+    font-weight: bold;
+}
+
+/*with the target = "_ top"*/
+[target="_top"]{
+    font-size:3rem;
+}
