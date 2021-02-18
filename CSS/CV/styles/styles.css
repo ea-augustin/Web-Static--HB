@@ -1,86 +1,83 @@
 /*Added a new font via google fonts.*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
 
-/*Adjusted font family and size */
-* {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-
+/*These variable are designed to help simplify the use of  attributes*/
+/*TODO add this to basic css template*/
+:root {
+    --font : 'Open Sans', sans-serif;
+    --font-headings : 'Abel', sans-serif;
+    --dark : rgb(37, 37, 37);
+    --light : lightgrey;
+    --blue : #7e98a7;
+    --darkblue : #5e7481;
 }
 
+/*--GENERAL FORMATTING FOR THE PAGE--*/
 
-/*Added a background image to the header*/
-header {
-    padding-top: 50px;
-    background-image: url("../img/bg-header.jpg");
+/* ------ For the body and the html ------ */
+html, body {
+    font-family: var(--font);
+    font-size:16px;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/*added a background and a border to the nav bar*/
-nav {
-    background-color: #d3d3d3;
-    border: solid 1px;
-    width:70%;
-    margin: auto;
-    border-radius: 5px 5px;
-    text-align: center;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
 }
 
-/*aligned elements in block*/
-ul li{
-    display: inline-block;
-    font-size: 16px;
-}
-
-
-.display-1 {
-    font-size: 40px;
-}
-
-#section {
-    display: inline-block;
-    padding: 10px;
-}
-
-/*adjusted the size of my paragraph*/
-hr ~ p {
-    font-size: 14px;
-}
-
-/*vertical-align: middle;*/
-#welcome {
-    margin-top: 10px;
-    text-align: center;
-    padding: 10px;
-    height: 400px;
-    line-height: 50px;
-    margin-bottom: 20px;
-}
-
-/*Added a border and color to the btn*/
-.btn.blue {
-    border-radius: 5px 5px;
-    color: lightgray;
-    background-color: #7e98a7;
-    padding: 15px 32px;
+/*Adjusted the color of the default color of the link to be in blue with no decoration*/
+a {
+    color: var(--blue);
     text-decoration: none;
 }
-
-
-/*set margin and align the text for display 2*/
-.display-2 {
-    margin-top: 10px;
-    text-align: center;
-    line-height: 50px;
+/*for the bg-dark class on hover change text to lightgray*/
+.bg-dark a:hover {
+    color: var(--light);
 }
 
+/*-----BUTTONS----*/
+/*instead of creating a boarder for the link/button we simple put a display: inline-block;*/
+/*and then adjust the features*/
+.btn {
+    display: inline-block;
+    padding:.1rem 1.1rem;
+    border-radius: .4rem;
+    transition: background-color .15s ease-in-out;
+}
+/*added a background color to the button*/
+.btn.blue{
+    background: var(--blue);
+    color:var(--light);
+}
+/*for the bg-dark class on hover change text to  black*/
+.bg-light a:hover {
+    color: var(--dark);
+}
+
+/*add a hover effect to the button*/
+.btn.blue:hover {
+    color:var(--light);
+    background: var(--darkblue);
+}
+
+/*Adjust the font-size for the h1 class display-1*/
+.display-1 {
+    font-size: 3rem;
+}
+
+/*Adjust the font-size for the h1 class display-2*/
+.display-2 {
+    font-size: 2.4rem;
+}
 /*adjusted the width of the hr*/
 hr {
     width: 50%;
     margin-top: 0;
 }
 
-
+/*Preset class setting to adjust background and text color*/
 .bg-light {
 
     background: rgb(233, 233, 233);
@@ -96,63 +93,134 @@ hr {
     background: #000;
 }
 
-#competence div img {
+/*--BODY STRUCTURE--*/
+/*HEADER*/
 
+/*Added a background image to the header*/
+header {
+    background-image: url("../img/bg-header.jpg");
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
 }
 
-#competence {
+/*LOGO*/
 
+/*For the header logo image we added a border and changed the background*/
+header #logo img {
+    border: 1px solid var(--light);
+    padding: 3px;
+    background: var(--dark);
 }
 
-/*set margin and align the text for display 2*/
-.display-2 {
-    font-size: 30px;
-    margin-top: -10px;
-}
-
-
-/*******************************************************/
-/*References */
-
-figure img {
-    border-radius: 5px 5px 5px 5px;
-}
-
-/*align to the center */
-#container{
-    text-align:center;
-}
-
-/*align the div in a row*/
-#container div {
+/*--NAVIGATION--*/
+/*added a background and a border to the nav bar*/
+/*the alignment was adjusted here*/
+header nav {
     display: inline-block;
-    width:30%;
+    background: var(--light);
+    color:var(--dark);
+    border-radius: 3px;
+}
+/*The NAVIGATION ul has be asked to inherit its color from the parent*/
+header nav ul a {
+    color: inherit;
 }
 
-/*Adjusted the size of the boxes*/
-figure img {
-    height: 200px;
-    width: 200px;
+/*Added a hover effect to the a*/
+header nav ul a:hover {
+    color: var(--darkblue)!important;
+}
+
+/*adjusted the size of the content in the ul*/
+header nav ul {
+    padding: .3rem 3rem;
+}
+
+/*Not sure what this adjusts yet*/
+header nav ul a li {
+    display: inline-block;
+}
+
+/*--GENERAL SECTION SETTING--*/
+
+/*Adjusted the general padding and margins for all sections*/
+section {
+    padding: 2rem 3rem 7rem 3rem!important;
+    margin: 0;
+
+}
+/*Adjusted the margin bottom for the h1 child of section*/
+section > h1 {
+    margin-bottom: 0.8rem;
+}
+
+/*Adjusted the margin bottom for the hr child of section*/
+section > hr {
+    margin-bottom: 3rem;
+}
+
+/*ADJUSTING THE COMPETENCE SECTION*/
+/*The padding and margin bottom was adjusted for the section competence div*/
+section#competence > div {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+/*We float the section competence div left*/
+section#competence > div img{
+    float: left;
+    margin-right:.6rem;
+}
+
+/*then we align the text left*/
+section#competence > div div{
+    text-align: left;
+}
+/*we sett the margin to zero*/
+section#competence > div div h2{
+    margin-top:0;
+}
+
+
+/*ADJUSTING THE REFERENCE SECTION*/
+
+/*the section reference containers were set too inline block*/
+section#ref #container > div {
+    display: inline-block;
+    max-width: 300px;
+    margin-right: 3rem;
+}
+
+/*removes the right margin from the last child*/
+section#ref #container > div:last-child {
+    margin-right: 0;
+}
+
+/*sets the margin for figure to 0*/
+
+section#ref #container > div > div figure {
+    margin: 0;
+}
+
+section#ref #container > div > div p {
+    font-style: italic;
 }
 
 
 
-
-
-/******************FOOTER************************/
-/*adjusted the footer for color and size*/
-
+/* -- FOOTER -- */
 footer {
-    font-size: 12px;
-    text-align: center;
+    font-size: .8rem;
+    height: 3rem;
+    line-height: 3rem;
 }
 
-footer div {
-    font-size: 12px;
-    text-align: center;
-}
 
-a {
-    font-size: 12px;
-    color: #7e98a7;
-}
+
+
+
+
+
+
+
