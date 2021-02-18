@@ -5,11 +5,12 @@
 * {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+
 }
 
 .bg-light {
     background: rgb(233, 233, 233);
-    color :  rgb(37, 37, 37);
+    color: rgb(37, 37, 37);
 }
 
 .bg-dark {
@@ -19,4 +20,28 @@
 
 .bg-black {
     background: #000;
+}
+
+header {
+    background-image: url("../img/bg-header.jpg");
+}
+
+nav {
+
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+
+}
+
+#section {
+    display: inline-block;
+    padding: 10px;
 }
