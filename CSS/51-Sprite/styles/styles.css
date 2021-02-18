@@ -1,0 +1,72 @@
+/*Added a new font via google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+/*Adjusted font family and size */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/*Added a margin to the social div*/
+.social {
+    margin: 0 auto;
+}
+
+
+.social a {
+    /*display: inline-block;*/
+    width: 84px;
+    height: 84px;
+    box-shadow: 1px 1px 1px;
+    margin-right: 6px;
+    background-image: url(../img/social-sprite.png);
+}
+
+.social a:last-child {
+    margin-right: 0;
+}
+
+
+/*Adjusted image for facebook icon*/
+.btn1 {
+
+    background-position: left 0 bottom 0;
+}
+
+/*Adjusted image for twitter icon*/
+.btn2 {
+    background-position: left 168px bottom 0;
+}
+
+/*Adjusted image for youtube icon*/
+.btn3 {
+    background-position: left 0 bottom 0;
+}
+
+/*Adjusted image for linkedin icon*/
+.btn4 {
+    background-position: left -336px bottom 0;
+}
+
+/*********************Added a hover to each bth*****************/
+
+/*Added hover for facebook icon*/
+.btn1:hover{
+
+    background-position: left 0 bottom 0;
+}
+
+/*Added hover image for twitter icon*/
+.btn2:hover{
+    background-position: left 168px bottom 0;
+}
+
+/*Added hover for youtube icon*/
+.btn3:hover{
+    background-position: left 0 bottom 0;
+}
+
+/*Added hover for linkedin icon*/
+.btn4:hover{
+    background-position: left 0 bottom 0;
+}
