@@ -22,11 +22,13 @@
     background: #000;
 }
 
+/*Added a background image to the header*/
 header {
     background-image: url("../img/bg-header.jpg");
     text-align: center;
 }
 
+/*added a background and a border to the nav bar*/
 nav {
     background-color: #d3d3d3;
     border:solid 1px;
@@ -36,25 +38,43 @@ nav {
     text-align: center;
 
 }
-
+ /*aligned elements in block*/
 ul li {
     display: inline-block;
     padding: 6px;
     font-size: 16px;
 
+}
 
+.display-1 {
 
+    font-size:40px;
 }
 
 #section {
     display: inline-block;
     padding: 10px;
 }
+/*adjusted the size of my paragraph*/
+hr ~ p {
+    font-size:14px;
+}
 
+
+/*vertical-align: middle;*/
 #welcome {
+    margin-top:10px;
     text-align:center;
-    margin-top: 0;
+    padding:10px;
     height:400px;
-    /*vertical-align: middle;*/
     line-height:50px;
+}
+
+/*Added a border and color to the btn*/
+.btn.blue {
+    border-radius: 5px 5px;
+    color:lightgray;
+    background-color:#7e98a7;
+    padding: 15px 32px;
+    text-decoration: none;
 }
