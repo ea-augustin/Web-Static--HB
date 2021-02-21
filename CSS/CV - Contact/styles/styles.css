@@ -9,6 +9,7 @@
     --dark: rgb(37, 37, 37);
     --light: lightgrey;
     --blue: #7e98a7;
+    --babyblue:#5d879c;
     --darkblue: #5e7481;
 }
 
@@ -26,10 +27,22 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headings);
 }
 
+/*remove the styling for lists*/
+
+li {
+    list-style-type: none;
+}
+
 /*Adjusted the color of the default color of the link to be in blue with no decoration*/
 a {
     color: var(--blue);
     text-decoration: none;
+}
+
+hr {
+    margin: 0;
+    text-align: left;
+    width: 180px;
 }
 
 /*Preset class setting to adjust background and text color*/
@@ -55,7 +68,7 @@ header {
     background-size: cover, auto;
     background-position: center;
     padding-bottom: 10px;
-    max-height: 300px;
+
 }
 
 /*--------TOP BAR-------*/
@@ -77,6 +90,7 @@ header {
     font-size: .6rem;
     color: var(--light);
 }
+
 
 /*Moved the social sprites to the right*/
 #social {
@@ -147,7 +161,7 @@ header {
 /*------- HEADER IMAGE AND NAV--------*/
 
 div#logo {
-    width:30%;
+    width: 30%;
     display: inline-block;
     /*border: 1px solid blue;*/
 }
@@ -168,8 +182,7 @@ div#logo {
 }
 
 /*NAVIGATION*/
-
-/*--NAVIGATION--*/
+/*todo move the nav bar all the way to the right*/
 /*added a background and a border to the nav bar*/
 /*the alignment was adjusted here*/
 header nav {
@@ -178,9 +191,11 @@ header nav {
     color: var(--dark);
     border-radius: 3px;
 }
+
 /*Display navigation inline-block*/
 header nav ul a li {
     display: inline-block;
+    line-height: 1rem;
 }
 
 /*The NAVIGATION ul has be asked to inherit its color from the parent*/
@@ -195,8 +210,71 @@ header nav ul a:hover {
 
 /*adjusted the size of the content in the ul*/
 header nav ul {
+    margin: 0;
     padding: .3rem 3rem;
 }
 
+/*Main Section*/
+
+main section#contact {
+    margin-left: 100px;
+}
+
+/*adjusted the font size and the padding of the h1.display-1*/
+main section div#contact-address h1.display-1 {
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 100px;
+}
+
+/*adjusted the size of the paragraph*/
+#contact div p {
+    font-size: .7rem;
+}
+
+/*applied a box shadow to the map*/
+section#contact-map {
+    box-shadow: 3px 3px 10px;
+}
+
+/*-------------FORM SECTION-----------*/
+
+#contact-form > div{
+    font-size:.8rem;
+    margin-left:20%;
+    border: 1px solid blue;
+
+
+}
+
+#form-container{
+    t
+    text-align: center;
+    border: 1px solid red;
+}
+
+#contact-form h1{
+ background-color: var(--babyblue);
+    color: var(--light);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -- FOOTER -- */
+footer {
+    text-align: center;
+    font-size: .8rem;
+    height: 1rem;
+    line-height: 1rem;
+}
 
 
