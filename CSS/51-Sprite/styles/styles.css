@@ -10,17 +10,22 @@
 /*Added a margin to the social div*/
 .social {
     margin: 0 auto;
+    width: 366px;
 }
 
-
+/*display all links in .social  inline-block*/
 .social a {
-    /*display: inline-block;*/
+    display: inline-block;
     width: 84px;
     height: 84px;
+    margin: 0 6px 0 0;
+    border: none;
     box-shadow: 1px 1px 1px;
-    margin-right: 6px;
     background-image: url(../img/social-sprite.png);
+    transition: background-position .15s ease-out;
+    box-sizing: content-box;
 }
+
 
 .social a:last-child {
     margin-right: 0;
@@ -28,45 +33,35 @@
 
 
 /*Adjusted image for facebook icon*/
-.btn1 {
-
+.facebook {
     background-position: left 0 bottom 0;
 }
-
 /*Adjusted image for twitter icon*/
-.btn2 {
-    background-position: left 168px bottom 0;
+.twitter {
+    background-position: left -672px bottom 0;
 }
-
 /*Adjusted image for youtube icon*/
-.btn3 {
-    background-position: left 0 bottom 0;
+.youtube {
+    background-position: left -840px  bottom 0;
 }
-
 /*Adjusted image for linkedin icon*/
-.btn4 {
+.linkedin {
     background-position: left -336px bottom 0;
 }
 
 /*********************Added a hover to each bth*****************/
 
 /*Added hover for facebook icon*/
-.btn1:hover{
 
-    background-position: left 0 bottom 0;
+.facebook:hover {
+    background-position: left 0 bottom -84px;
 }
-
-/*Added hover image for twitter icon*/
-.btn2:hover{
-    background-position: left 168px bottom 0;
+.twitter:hover {
+    background-position: right -168px bottom -84px;
 }
-
-/*Added hover for youtube icon*/
-.btn3:hover{
-    background-position: left 0 bottom 0;
+.youtube:hover {
+    background-position: right 0 bottom -84px;
 }
-
-/*Added hover for linkedin icon*/
-.btn4:hover{
-    background-position: left 0 bottom 0;
+.linkedin:hover {
+    background-position: left -336px bottom -84px;
 }

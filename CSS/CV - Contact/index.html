@@ -14,10 +14,23 @@
 EN-TETE
 #############################-->
 
-<header>
+<header class="header-short">
+    <!-- Barre du haut -->
+    <div id="top" class="bg-black">
+        <div>
+            <a href="mailto:rmitchum@monbeaucheval.com" title="M'envoyer un mail">rmitchum@monbeaucheval.com</a>
+        </div>
+        <div id="social">
+            <a href="" class="facebook">facebook</a>
+            <a href="" class="twitter">twitter</a>
+            <a href="" class="youtube">youtube</a>
+            <a href="" class="linkedin">linkedin</a>
+        </div>
+    </div>
+
     <!-- Logo -->
     <div id="logo">
-        <img src='img/logo-header.jpg' alt='Photo de Robert Mitchum' width="256px" />
+        <img src='img/logo-header.jpg' alt='Photo de Robert Mitchum' width="256px"/>
         <br>
         <h1>Robert Mitchum</h1>
     </div>
@@ -51,106 +64,69 @@ FIN EN-TETE
 <!--#############################
 MAIN
 #############################-->
-<main>
-    <!-- Welcome -->
-    <section id="welcome" class="bg-light">
-        <h1 class="display-1">Développeur web!</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae facere nisi eius? Eligendi
-            blanditiis neque consequuntur recusandae ex et cumque quos, ipsa quaerat praesentium corrupti distinctio
-            unde, nesciunt aspernatur earum.</p>
-        <hr>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In laboriosam dolores quia eum, impedit porro .
-        </p>
-        <p>
-            <a class="btn blue" href="contact.html">Contactez-moi</a>
-        </p>
+<main class="bg-light">
+    <section id="contact">
+        <!-- Welcome -->
+        <div id="contact-address">
+            <h1 class="display-1">Contactez-moi</h1>
+            <p>N'hésitez pas à me contacter en utilisant les coordonnées ci-dessous ou le <a href="#contact-form">formulaire
+                de contact</a></p>
+            <hr>
+            <address>
+                <ul>
+                    <li><span class="contact-name">Robert Mitchum</span></li>
+                    <li>rue du cheval mort</li>
+                    <li>43666 Mal-Baureau</li>
+                </ul>
+                <ul>
+                    <li>tel : <a href="tel: 06 01 02 03 04"></a>06 12 34 56 78</li>
+                    <li><a href="mailto:rmitchum@monbeaucheval.com">rmitchum@monbeaucheval.com</a></li>
+                </ul>
+            </address>
 
+        </div>
     </section>
 
-    <!-- Parcours -->
-    <section id="competence">
-        <h1 class="display-2">Compétences</h1>
-        <hr>
 
-        <div class="bg-light">
-            <img src='https://placehold.it/128x128?text=HTML' alt='Logo HTML' />
-            <div>
-                <h2>Html</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quibusdam laudantium ad
-                    excepturi dolor ducimus rerum voluptatum officiis! Explicabo sequi alias iste aut cumque
-                    pariatur unde magni corrupti ab accusantium.</p>
-            </div>
-        </div>
-        <div class="bg-light">
-            <img src='https://placehold.it/128x128?text=CSS' alt='Logo CSS' />
-            <div>
-                <h2>CSS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat exercitationem, incidunt
-                    dicta maxime voluptate in perferendis non? Tenetur nisi odio, eos hic consectetur ipsam ea
-                    labore. Odio, necessitatibus possimus.</p>
-            </div>
-        </div>
-        <div class="bg-light">
-            <img src='https://placehold.it/128x128?text=JS' alt='Logo JS' />
-            <div>
-                <h2>JavaScript</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est enim iusto asperiores nesciunt a
-                    illum amet minima! Laboriosam iure similique repellat dolore accusamus, suscipit commodi
-                    eligendi, ipsa impedit reprehenderit velit!</p>
-            </div>
-        </div>
-        <div class="bg-light">
-            <img src='https://placehold.it/128x128?text=ANGULAR' alt='Logo AngularJS' />
-            <div>
-                <h2>AngularJS</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa commodi a harum suscipit sunt
-                    dolores vero nostrum laboriosam id! Iure autem molestias iusto et facere ipsum eaque! Maxime,
-                    nobis iste.</p>
-            </div>
-        </div>
-
+    <!-- Map -->
+    <section id="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206285.3113814946!2d-114.13614756542589!3d36.112790251918334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80cc0654bd27e08d%3A0xb1c2554442d42e8d!2sGrand+Canyon!5e0!3m2!1sfr!2sfr!4v1552633167340"
+                allowfullscreen></iframe>
     </section>
-    <!-- Références -->
-    <section id="ref" class="bg-light">
-        <h1 class="display-2">Références</h1>
-        <hr>
-        <div id="container">
 
-            <div>
-                <h2>Human Booster</h2>
-                <div>
-                    <figure>
-                        <img src='https://placehold.it/256x256?text=HB' alt='' />
-                        <figcaption>Human Booster : Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
-                            libero!</figcaption>
-                    </figure>
+    <!-- Form -->
+    <section id="contact-form" class="bg-dark">
+        <div id="form-container" class="bg-light">
+            <h1 class="display-1">Utilisez le formulaire</h1>
+            <form>
+                <div class="section"><span>1</span>Nom et adresse</div>
+                <div class="inner-wrap">
+                    <label>Votre nom complet <input type="text" name="fullname"/></label>
+                    <label>Votre adresse <textarea name="address"></textarea></label>
                 </div>
-            </div>
 
-            <div>
-                <h2>Apple</h2>
-                <div>
-                    <figure>
-                        <img src='https://placehold.it/256x256?text=APPLE' alt='' />
-                        <figcaption>Apple : Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, vero.
-                        </figcaption>
-                    </figure>
+                <div class="section"><span>2</span>Email & Téléphone</div>
+                <div class="inner-wrap">
+                    <label>Adresse email <input type="email" name="email"/></label>
+                    <label>Téléphone <input type="text" name="phone"/></label>
                 </div>
-            </div>
 
-            <div>
-                <h2>Petit Homme</h2>
-                <div>
-                    <figure>
-                        <img src='https://placehold.it/256x256?text=PHP' alt='' />
-                        <figcaption>Petit Homme : Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                            dolorem.</figcaption>
-                    </figure>
+                <div class="section"><span>3</span>Message</div>
+                <div class="inner-wrap">
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
                 </div>
-            </div>
+                <div class="button-section">
+                    <input type="submit" name="Envoyer" class="btn blue"/>
+                    <span class="privacy-policy">
+                            <input type="checkbox" name="confidentiality"> J'accepte la politique de
+                            confidentialité.
+                        </span>
+                </div>
         </div>
-
+        </form>
+        <!-- Fin du formulaire -->
     </section>
+
 </main>
 <!--#############################
 FIN MAIN
