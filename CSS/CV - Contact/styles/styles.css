@@ -18,11 +18,99 @@
 html, body {
     font-family: var(--font);
     font-size: 16px;
-    text-align: center;
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headings);
+}
+
+/*Adjusted the color of the default color of the link to be in blue with no decoration*/
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+ /*----------H E A D E R --------*/
+ header {
+     border: 1px solid blue;
+ }
+
+ /*--------TOP BAR-------*/
+/*Added background color to the #top section*/
+#top{
+    background-color: var(--dark);
+}
+/*added a padding to the #top, displayed inline-block;*/
+#top div {
+    margin:10px;
+    display:inline-block;
+    position: relative;
+    line-height:1rem;
+}
+
+/*Adjusted the size of the link text and aligned the center*/
+#top a {
+    font-size:.6rem;
+    color: var(--light);
+}
+/*Moved the social sprites to the right*/
+ #social{
+    float: right;
+}
+
+/*------ HEADER SPRITES------*/
+
+/*display all links in .social  inline-block*/
+#social a {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin: 0 6px 0 0;
+    border: none;
+    box-shadow: 1px 1px 1px;
+    background-image: url(../img/social-sprite.png);
+    transition: background-position .15s ease-out;
+    box-sizing: content-box;
+    zoom:0.21;
+}
+
+#social a:last-child {
+    margin-right: 0;
+}
+
+
+/*Adjusted image for facebook icon*/
+.facebook {
+    background-position: left 0 bottom 0;
+}
+/*Adjusted image for twitter icon*/
+.twitter {
+    background-position: left -672px bottom 0;
+}
+/*Adjusted image for youtube icon*/
+.youtube {
+    background-position: left -840px  bottom 0;
+}
+/*Adjusted image for linkedin icon*/
+.linkedin {
+    background-position: left -336px bottom 0;
+}
+
+/*********************Added a hover to each bth*****************/
+
+/*Added hover for facebook icon*/
+
+.facebook:hover {
+    background-position: left 0 bottom -84px;
+}
+.twitter:hover {
+    background-position: right -168px bottom -84px;
+}
+.youtube:hover {
+    background-position: right 0 bottom -84px;
+}
+.linkedin:hover {
+    background-position: left -336px bottom -84px;
 }
