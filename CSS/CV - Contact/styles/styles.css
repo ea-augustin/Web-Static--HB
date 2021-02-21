@@ -18,7 +18,7 @@
 html, body {
     font-family: var(--font);
     font-size: 16px;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -32,31 +32,54 @@ a {
     text-decoration: none;
 }
 
- /*----------H E A D E R --------*/
- header {
-     border: 1px solid blue;
- }
+/*Preset class setting to adjust background and text color*/
+.bg-light {
 
- /*--------TOP BAR-------*/
+    background: rgb(233, 233, 233);
+    color: rgb(37, 37, 37);
+}
+
+.bg-dark {
+    background: rgb(37, 37, 37);
+    color: lightgrey;
+}
+
+.bg-black {
+    background: #000;
+}
+
+/*----------H E A D E R --------*/
+header {
+    border: 1px solid blue;
+    background-image: url("../img/bg-header.jpg");
+    background-size: cover, auto;
+    background-position: center;
+    padding-bottom: 10px;
+    max-height: 300px;
+}
+
+/*--------TOP BAR-------*/
 /*Added background color to the #top section*/
-#top{
+#top {
     background-color: var(--dark);
 }
+
 /*added a padding to the #top, displayed inline-block;*/
 #top div {
-    margin:10px;
-    display:inline-block;
-    position: relative;
-    line-height:1rem;
+    margin: 10px;
+    display: inline-block;
+    /*position: relative;*/
+    line-height: 1rem;
 }
 
 /*Adjusted the size of the link text and aligned the center*/
 #top a {
-    font-size:.6rem;
+    font-size: .6rem;
     color: var(--light);
 }
+
 /*Moved the social sprites to the right*/
- #social{
+#social {
     float: right;
 }
 
@@ -73,7 +96,7 @@ a {
     background-image: url(../img/social-sprite.png);
     transition: background-position .15s ease-out;
     box-sizing: content-box;
-    zoom:0.21;
+    zoom: 0.21;
 }
 
 #social a:last-child {
@@ -85,14 +108,17 @@ a {
 .facebook {
     background-position: left 0 bottom 0;
 }
+
 /*Adjusted image for twitter icon*/
 .twitter {
     background-position: left -672px bottom 0;
 }
+
 /*Adjusted image for youtube icon*/
 .youtube {
-    background-position: left -840px  bottom 0;
+    background-position: left -840px bottom 0;
 }
+
 /*Adjusted image for linkedin icon*/
 .linkedin {
     background-position: left -336px bottom 0;
@@ -105,12 +131,72 @@ a {
 .facebook:hover {
     background-position: left 0 bottom -84px;
 }
+
 .twitter:hover {
     background-position: right -168px bottom -84px;
 }
+
 .youtube:hover {
     background-position: right 0 bottom -84px;
 }
+
 .linkedin:hover {
     background-position: left -336px bottom -84px;
 }
+
+/*------- HEADER IMAGE AND NAV--------*/
+
+div#logo {
+    width:30%;
+    display: inline-block;
+    /*border: 1px solid blue;*/
+}
+
+#logo img {
+    float: left;
+    height: 70px;
+    width: 70px;
+    border: 1px solid var(--light);
+    padding: 3px;
+    background: var(--dark);
+    margin-right: 10px;
+}
+
+#logo h1 {
+    font-size: 1rem;
+    color: var(--light);
+}
+
+/*NAVIGATION*/
+
+/*--NAVIGATION--*/
+/*added a background and a border to the nav bar*/
+/*the alignment was adjusted here*/
+header nav {
+    display: inline-block;
+    background: var(--light);
+    color: var(--dark);
+    border-radius: 3px;
+}
+/*Display navigation inline-block*/
+header nav ul a li {
+    display: inline-block;
+}
+
+/*The NAVIGATION ul has be asked to inherit its color from the parent*/
+header nav ul a {
+    color: inherit;
+}
+
+/*Added a hover effect to the a*/
+header nav ul a:hover {
+    color: var(--darkblue) !important;
+}
+
+/*adjusted the size of the content in the ul*/
+header nav ul {
+    padding: .3rem 3rem;
+}
+
+
+
