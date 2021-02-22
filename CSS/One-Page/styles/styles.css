@@ -23,6 +23,59 @@ html, body {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*Remove decorations from lists*/
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, h3 {
     font-family: var(--font-headings);
 }
+
+/***********************HEADER*******************/
+/*Added a background image to the header*/
+header {
+    background-image: url("../img/background Image.png");
+    background-size: cover;
+}
+
+header#top {
+    display: inline-block;
+}
+
+header div p {
+    Float: left;
+    margin: 0;
+    padding: 10px;
+}
+
+/*Display navigation inline-block*/
+header nav {
+    float: right;
+}
+
+/*Display navigation inline-block*/
+header nav ul {
+    margin: 0;
+    padding: 0 !important;
+}
+
+/*Display navigation inline-block*/
+header nav ul li {
+    display: inline-block;
+
+}
+
+/*Added a padding on the li*/
+header nav ul li {
+    padding: 10px;
+
+}
+
+header div#hero {
+   text-align: center;
+
+}
+
+
