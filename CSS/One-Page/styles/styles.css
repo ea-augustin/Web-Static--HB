@@ -1,0 +1,28 @@
+/*Added a new font via google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+/*These variable are designed to help simplify the use of  attributes*/
+/*TODO add this to basic css template*/
+:root {
+    --font: 'Open Sans', sans-serif;
+    --font-headings: 'Abel', sans-serif;
+    --dark: rgb(37, 37, 37);
+    --light: lightgrey;
+    --blue: #7e98a7;
+    --babyblue: #5d879c;
+    --darkblue: #5e7481;
+}
+
+/*--GENERAL FORMATTING FOR THE PAGE--*/
+
+/* ------ For the body and the html ------ */
+html, body {
+    font-family: var(--font);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+}

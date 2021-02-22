@@ -9,7 +9,7 @@
     --dark: rgb(37, 37, 37);
     --light: lightgrey;
     --blue: #7e98a7;
-    --babyblue:#5d879c;
+    --babyblue: #5d879c;
     --darkblue: #5e7481;
 }
 
@@ -238,35 +238,22 @@ section#contact-map {
 }
 
 /*-------------FORM SECTION-----------*/
-
-#contact-form > div{
-    font-size:.8rem;
-    margin-left:20%;
-    border: 1px solid blue;
-
-
-}
-
-#form-container{
-    t
-    text-align: center;
-    border: 1px solid red;
-}
-
-#contact-form h1{
- background-color: var(--babyblue);
+#contact-form h1 {
+    background-color: var(--babyblue);
     color: var(--light);
 
 }
 
+#contact-form > div {
+    font-size: .8rem;
+    /*border: 1px solid blue;*/
+}
 
-
-
-
-
-
-
-
+#form-container {
+    margin: 50px;
+    text-align: center;
+    border: 1px solid red;
+}
 
 
 /* -- FOOTER -- */
