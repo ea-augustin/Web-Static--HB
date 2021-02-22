@@ -1,16 +1,20 @@
 /*Added a new font via google fonts.*/
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&family=Roboto+Slab&display=swap');
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/WisdomScriptAJ.woff') format('woff');
+}
 
 /*These variable are designed to help simplify the use of  attributes*/
-/*TODO add this to basic css template*/
 :root {
     --font: 'Open Sans', sans-serif;
-    --font-headings: 'Abel', sans-serif;
-    --dark: rgb(37, 37, 37);
-    --light: lightgrey;
-    --blue: #7e98a7;
-    --babyblue: #5d879c;
-    --darkblue: #5e7481;
+    --font-headings: 'Montserrat', sans-serif;
+    --yell: #fed136;
+    --lightgrey: #f7f7f7;
+
 }
 
 /*--GENERAL FORMATTING FOR THE PAGE--*/
@@ -33,18 +37,60 @@ h1, h2, h3 {
     font-family: var(--font-headings);
 }
 
+/*General font setting for h2*/
+h2 {
+    font-size: 75px;
+}
+
+/*General font setting for h2*/
+h3 {
+    font-size: 40px;
+
+}
+
+/*general setting for btn*/
+.btn {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: var(--yell);
+    height: 65px;
+    width: 240px;
+    line-height: 65px;
+
+}
+
+/*General settings for links*/
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /***********************HEADER*******************/
 /*Added a background image to the header*/
 header {
-    background-image: url("../img/background Image.png");
+    background-image: url("../img/bg_header.png");
     background-size: cover;
+    height: 50rem;
 }
 
+/*changed the color of the h2 and h3 in the hero section to white*/
+header div#hero h2, header div#hero h3 {
+    color: white;
+}
+
+/*changed the h1 font */
+header h1 {
+    font-family: 'Wisdom Script Regular';
+    color: var(--yell);
+}
+
+/*display contents of th header top to inline-block;*/
 header#top {
     display: inline-block;
 }
 
-header div p {
+/*Adjusted my h1 logo to the left and added a padding and removed the margin*/
+header div#logo h1 {
     Float: left;
     margin: 0;
     padding: 10px;
@@ -73,9 +119,55 @@ header nav ul li {
 
 }
 
-header div#hero {
-   text-align: center;
+/*Display settings for the hero div*/
+div#hero {
+    padding: 10rem !important;
+    text-align: center;
 
 }
 
+/*************Services*************/
+/*aligned the content too the center*/
+#services {
+    text-align: center;
+}
 
+#three_servs {
+    display: flex;
+}
+
+/*************Portfolio*************/
+/*aligned the content too the center*/
+#portfolio {
+    text-align: center;
+    background-color: var(--lightgrey);
+}
+
+#six_ports {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
+#six_ports  > div{
+    width:30%;
+
+}
+
+#six_ports img {
+    height: 300px;
+    width: 300px;
+}
+
+/*************Our Team*************/
+/*aligned the content too the center*/
+#aboutUs {
+    text-align: center;
+}
+
+#three_abouts {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+
+}
