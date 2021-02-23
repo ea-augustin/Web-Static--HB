@@ -111,7 +111,7 @@
 
         <div id="three_abouts">
             <div>
-                <img src='img/portfolio_1.png' alt='Ebony and Ivory' width=""/>
+                <img class="profile" src='img/portfolio_1.png' alt='Ebony and Ivory' width=""/>
                 <h4>Kimberly Thompson</h4>
                 <p>Marketer</p>
                 <div class="icons">
@@ -126,7 +126,7 @@
             </div>
 
             <div>
-                <img src='img/portfolio_1.png' alt='Ebony and Ivory' width=""/>
+                <img class="profile" src='img/portfolio_1.png' alt='Ebony and Ivory' width=""/>
                 <h4>Rico Massimo</h4>
                 <p>Coder</p>
                 <div class="icons">
@@ -139,7 +139,7 @@
             </div>
 
             <div>
-                <img src='img/portfolio_1.png' alt='Ebony and Ivory' width=""/>
+                <img  class="profile" src='img/portfolio_1.png' alt='Ebony and Ivory' width=""/>
                 <h4>Uku Mason</h4>
                 <p>Graphic Designer</p>
                 <div class="icons">
@@ -168,15 +168,18 @@
 
         <div>
             <form action="/action_page.php">
-                <div id="left">
-                    <input type="text" id="fname" name="fname" value="John">
-                    <input type="email" id="email" name="email" value="email">
-                    <input type="text" id="subject" name="subject" value="Subject">
+                <div id="boxes">
+                    <div id="left">
+                        <input type="text" id="fname" name="fname" placeholder="YOUR NAME*">
+                        <input type="email" id="email" name="email" placeholder="YOUR EMAIL*">
+                        <input type="text" id="subject" name="subject" placeholder="SUBJECT">
+                    </div>
+
+                    <div id="right">
+                        <textarea id="textarea" name="textarea" rows="6" cols="50" placeholder="YOUR MESSAGE"></textarea>
+                    </div>
                 </div>
 
-                <div id="right">
-                    <textarea id="textarea" name="textarea" rows="6" cols="50"></textarea>
-                </div>
                 <input class="btn" type="submit" value="SEND MESSAGE">
             </form>
 

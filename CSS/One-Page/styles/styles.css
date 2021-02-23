@@ -10,10 +10,11 @@
 
 /*These variable are designed to help simplify the use of  attributes*/
 :root {
-    --font: 'Open Sans', sans-serif;
+    --font: 'Roboto Slab', serif;
     --font-headings: 'Montserrat', sans-serif;
     --yell: #fed136;
     --lightgrey: #f7f7f7;
+    --gray: #777777;
 
 }
 
@@ -25,6 +26,8 @@ html, body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    background-color: black;
+
 }
 
 /*Remove decorations from lists*/
@@ -33,7 +36,7 @@ li a {
     color: white;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--font-headings);
 }
 
@@ -63,8 +66,24 @@ h3 {
 a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-family:var(--font-headings)
 }
 
+/*changed the font for all paragraph*/
+p {
+    font-family: var(--font);
+    font-size: .8rem;
+    font-weight: bold;
+    color:var(--gray);
+}
+
+/*apply radius to all inputs*/
+input,textarea{
+    border-radius:2px;
+    font-family:var(--font-headings);
+    font-weight: bold;
+}
 /***********************HEADER*******************/
 /*Added a background image to the header*/
 header {
@@ -87,6 +106,7 @@ header h1 {
 /*display contents of th header top to inline-block;*/
 header#top {
     display: inline-block;
+
 }
 
 /*Adjusted my h1 logo to the left and added a padding and removed the margin*/
@@ -130,44 +150,130 @@ div#hero {
 /*aligned the content too the center*/
 #services {
     text-align: center;
+    background-color:white;
 }
 
 #three_servs {
     display: flex;
+
 }
+
 
 /*************Portfolio*************/
 /*aligned the content too the center*/
-#portfolio {
+section#portfolio {
     text-align: center;
     background-color: var(--lightgrey);
 }
 
-#six_ports {
+div#six_ports {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#six_ports > div {
+    width: 30%;
 
 }
-#six_ports  > div{
-    width:30%;
+
+#six_ports div {
+    width: 290px;
+    height: 400px;
+    box-shadow: 1px 1px 5px 1px lightgrey;
 
 }
 
 #six_ports img {
     height: 300px;
-    width: 300px;
+    width: 290px;
 }
 
 /*************Our Team*************/
 /*aligned the content too the center*/
 #aboutUs {
+    background-color:white;
     text-align: center;
 }
 
 #three_abouts {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 
+}
+
+#three_abouts div .profile {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+/*************Our Team*************/
+/*aligned the content too the center*/
+#partners {
+    padding:1rem;
+    text-align: center;
+    background-color: var(--lightgrey);
+}
+
+#partners img {
+    margin: 10px;
+}
+
+/*************Our Team*************/
+/*aligned the content too the center*/
+
+section#contact{
+    color: white;
+    text-align: center;
+    background-image: url("../img/map_contact.png");
+    background-size: cover;
+
+}
+
+#contact > div {
+    display: flex;
+    justify-content: center;
+}
+
+#boxes {
+    display: flex;
+
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#left input {
+    padding:.7rem;
+    margin: 1rem;
+    width:100%;
+}
+
+#right {
+    display: flex;
+    padding: 1rem;
+}
+
+footer{
+    background-color:white;
+    margin-top:7rem;
+    display: flex;
+    justify-content: space-evenly;
+    color:var(--gray);
+
+}
+footer div{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+#social img{
+    margin:.4rem;
 }
