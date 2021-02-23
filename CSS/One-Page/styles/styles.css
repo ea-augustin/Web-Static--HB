@@ -14,7 +14,7 @@
     --font-headings: 'Montserrat', sans-serif;
     --yell: #fed136;
     --lightgrey: #f7f7f7;
-    --gray: #777777;
+    --gray: #797575;
 
 }
 
@@ -26,7 +26,7 @@ html, body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    background-color: black;
+    /*background-color: black;*/
 
 }
 
@@ -48,6 +48,7 @@ h2 {
 /*General font setting for h2*/
 h3 {
     font-size: 40px;
+    margin:0;
 
 }
 
@@ -59,7 +60,12 @@ h3 {
     height: 65px;
     width: 240px;
     line-height: 65px;
+    color: white;
+}
 
+.btn:hover {
+    color: black;
+    background-color:var(--lightgrey);
 }
 
 /*General settings for links*/
@@ -67,22 +73,25 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family:var(--font-headings)
+    font-family: var(--font-headings)
 }
 
 /*changed the font for all paragraph*/
 p {
     font-family: var(--font);
     font-size: .8rem;
-    font-weight: bold;
-    color:var(--gray);
+    color: var(--gray);
 }
 
 /*apply radius to all inputs*/
-input,textarea{
-    border-radius:2px;
-    font-family:var(--font-headings);
+input, textarea {
+    border-radius: 2px;
+    font-family: var(--font-headings);
     font-weight: bold;
+}
+/****************PADDING************/
+section#services,section#portfolio,section#aboutUs{
+    padding:2rem;
 }
 /***********************HEADER*******************/
 /*Added a background image to the header*/
@@ -138,6 +147,11 @@ header nav ul li {
     padding: 10px;
 
 }
+/*Added a padding on the li*/
+header nav ul li a:hover {
+    color: var(--yell);
+
+}
 
 /*Display settings for the hero div*/
 div#hero {
@@ -150,7 +164,7 @@ div#hero {
 /*aligned the content too the center*/
 #services {
     text-align: center;
-    background-color:white;
+    background-color: white;
 }
 
 #three_servs {
@@ -192,7 +206,7 @@ div#six_ports {
 /*************Our Team*************/
 /*aligned the content too the center*/
 #aboutUs {
-    background-color:white;
+    background-color: white;
     text-align: center;
 }
 
@@ -212,7 +226,7 @@ div#six_ports {
 /*************Our Team*************/
 /*aligned the content too the center*/
 #partners {
-    padding:1rem;
+    padding: 1rem;
     text-align: center;
     background-color: var(--lightgrey);
 }
@@ -224,11 +238,13 @@ div#six_ports {
 /*************Our Team*************/
 /*aligned the content too the center*/
 
-section#contact{
+section#contact {
     color: white;
     text-align: center;
     background-image: url("../img/map_contact.png");
     background-size: cover;
+    background-color: black;
+
 
 }
 
@@ -249,9 +265,9 @@ section#contact{
 }
 
 #left input {
-    padding:.7rem;
+    padding: .7rem;
     margin: 1rem;
-    width:100%;
+    width: 100%;
 }
 
 #right {
@@ -259,21 +275,94 @@ section#contact{
     padding: 1rem;
 }
 
-footer{
-    background-color:white;
-    margin-top:7rem;
+/*****************SPRITES***********************/
+
+/*Added a margin to the social div*/
+.social {
+    margin: 0 auto;
+    width: 366px;
+}
+
+/*display all links in .social  inline-block*/
+.social a {
+    display: inline-block;
+    width: 84px;
+    height: 84px;
+    margin: 0 6px 0 0;
+    border: none;
+    box-shadow: 1px 1px 1px;
+    background-image: url(../img/social-sprite.png);
+    transition: background-position .15s ease-out;
+    box-sizing: content-box;
+    border-radius: 50%;
+    zoom: 50%;
+}
+
+
+.social a:last-child {
+    margin-right: 0;
+}
+
+
+/*Adjusted image for facebook icon*/
+.facebook {
+    background-position: left 0 bottom 0;
+}
+
+/*Adjusted image for twitter icon*/
+.twitter {
+    background-position: left -672px bottom 0;
+}
+
+/*Adjusted image for youtube icon*/
+.pinterest {
+    background-position: left -420px bottom 0;
+}
+
+/*Adjusted image for linkedin icon*/
+.google {
+    background-position: left -252px bottom 0;
+}
+
+/*********************Added a hover to each bth*****************/
+
+/*Added hover for facebook icon*/
+
+.facebook:hover {
+    background-position: left 0 bottom -84px;
+}
+
+.twitter:hover {
+    background-position: right -168px bottom -84px;
+}
+
+.pinterest:hover {
+    background-position: right -420px bottom -84px;
+}
+
+.google:hover {
+    background-position: left -252px bottom -84px;
+}
+
+/*******************FOOTER**************/
+footer {
+    background-color: white;
+    margin: 0;
     display: flex;
     justify-content: space-evenly;
-    color:var(--gray);
+    color: var(--gray);
+    padding: 1rem;
 
 }
-footer div{
+
+footer div {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
 }
-#social img{
-    margin:.4rem;
+
+#social img {
+    margin: .4rem;
 }
