@@ -1,0 +1,59 @@
+/*Added a new font via google fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+/*These variable are designed to help simplify the use of  attributes*/
+/*TODO add this to basic css template*/
+:root {
+    --font: 'Open Sans', sans-serif;
+    --font-headings: 'Abel', sans-serif;
+    --dark: rgb(37, 37, 37);
+    --light: lightgrey;
+}
+
+/*--GENERAL FORMATTING FOR THE PAGE--*/
+
+/* ------ For the body and the html ------ */
+html, body {
+    font-family: var(--font);
+    font-size: 16px;
+    margin: 10px;
+    padding: 0;
+}
+/*****************HEADER***************/
+header{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+}
+
+#searchBar{
+    display:grid;
+    grid-template-columns:1fr 3fr;
+}
+
+#profileImg{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+
+/********************CARD*****************/
+
+#container{
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+    background-color:var(--dark);
+
+}
+
+
+.card {
+    text-align: center;
+    max-width:240px;
+    max-height:345px;
+    margin:0;
+    padding:0;
+    background-color:white;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius:3px;
+}
