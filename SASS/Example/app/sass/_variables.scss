@@ -1,0 +1,20 @@
+//  colors :
+$primary : rgb(141, 40, 22);
+$primary-light: lighten($primary, 60%);
+$primary-dark: darken($primary, 40%);
+$accent: rgb(124, 134, 226);
+
+
+$padding: 15px;
+$borders: $padding * 3;
+
+
+$desktop: 840px; //breakpoint for desktop view
+
+@mixin desktop {
+
+  // creating a desktop view
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

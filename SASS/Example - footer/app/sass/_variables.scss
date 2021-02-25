@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+
+//  colors :
+$primary : rgb(141, 40, 22);
+$light: #aea6a6;
+$extra-light:#AEA6A6;
+$dark: #292929;
+$dark-mid:#454545;
+
+
+//Font
+$font:'Montserrat', sans-serif;
+
+//border
+$border:3px;
+
+
+  $desktop: 840px; //breakpoint for desktop view
+
+  @mixin desktop {
+
+    // creating a desktop view
+    @media (min-width: #{$desktop}) {
+      @content;
+    }
+  }

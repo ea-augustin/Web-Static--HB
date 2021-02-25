@@ -1,0 +1,79 @@
+@import '../../node_modules/normalize-scss/sass/normalize';
+@import '_variables.scss';
+
+//General Settings
+
+//set background color and text of project
+body {
+  background-color: $dark;
+  color: $extra-light;
+  font-family: $font;
+}
+
+div#logo {
+  display: flex;
+}
+
+footer {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+
+.fill {
+  padding: 10px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#logo img {
+  height: 40px;
+  width: 45px;
+
+}
+
+div#contents {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+
+form#form_container {
+  display: grid;
+  align-self: center;
+  grid-template-columns:1fr 1fr;
+  grid-gap: .4rem;
+
+}
+
+#message {
+  grid-column: 1 / span 2;
+  border-radius: $border;
+  background-color: $dark;
+}
+
+input {
+  border: 1px solid $light;
+  background-color: $dark;
+  border-radius: $border;
+}
+
+input.btn {
+  display: grid;
+  background-color: $light;
+  border-radius: $border;
+  justify-self: start;
+  color: white;
+  height: 41px;
+  width: 135px;
+  border: none;
+
+  &:hover {
+    background-color: $dark-mid;
+  }
+}

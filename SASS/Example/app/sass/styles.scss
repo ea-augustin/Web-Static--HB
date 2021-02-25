@@ -1,3 +1,18 @@
-body{
-  background-color:blue;
+@import '../../node_modules/normalize-scss/sass/normalize';
+@import '_variables.scss';
+
+a {
+  background-color: $primary;
+  color: $accent;
+
+  &padding {
+    padding: $padding;
+  }
+
+  &border {
+    border-radius: $borders;
+  }
+
+
 }
+
