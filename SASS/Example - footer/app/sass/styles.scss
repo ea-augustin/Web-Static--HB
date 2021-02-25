@@ -8,21 +8,28 @@ body {
   background-color: $dark;
   color: $extra-light;
   font-family: $font;
+  margin-left:15%;
+  margin-right:15%;
+  margin-top:10%;
 }
-
+//aligned the logo and the tile and set a gap between them
 div#logo {
   display: flex;
+  grid-gap:1rem;
 }
 
+//displayed the footer using grid
 footer {
   display: grid;
   grid-template-columns:1fr 1fr;
 }
 
+//adding a padding to each of my inputs
 .fill {
   padding: 10px;
 }
 
+//removed the margin and padding from my h1
 h1 {
   margin: 0;
   padding: 0;
@@ -36,18 +43,20 @@ h1 {
 
 div#contents {
   display: flex;
+  flex-flow: column wrap;
   flex-direction:column;
-  justify-content: center;
-  flex-wrap: wrap;
+}
 
-
+#text-body p {
+  width: 70%;
+  height: 70%;
 }
 
 form#form_container {
   display: grid;
   align-self: center;
   grid-template-columns:1fr 1fr;
-  grid-gap: .4rem;
+  grid-gap: 1rem;
 
 }
 
