@@ -8,26 +8,56 @@
     --font-headings: 'Abel', sans-serif;
     --dark: rgb(37, 37, 37);
     --light: lightgrey;
+    --bg-color : #F2F1F0;
 }
 
 /*--GENERAL FORMATTING FOR THE PAGE--*/
 
 /* ------ For the body and the html ------ */
-html, body {
-    font-family: var(--font);
-    font-size: 16px;
-    margin: 10px;
-    padding: 0;
+html{
+    display:grid;
+    justify-content: center;
+    background-color:var(--bg-color);
 }
+
+/*setting for the body content*/
+body {
+    font-family: var(--font);
+    font-size: 13px;
+    max-width: 960px;
+    padding: 0;
+
+}
+
+/*setting for all the h1 content*/
+h2{
+    font-size:1rem;
+}
+
+/*setting for all paragraphs*/
+p {
+
+}
+
+/*settings for img*/
+.card > img{
+    width: 100%;
+}
+
 /*****************HEADER***************/
 header{
     display:grid;
     grid-template-columns:1fr 2fr 1fr;
+    align-content: center;
 }
 
 #searchBar{
     display:grid;
     grid-template-columns:1fr 3fr;
+
+}
+.search{
+    background-color:var(--light);
 }
 
 #profileImg{
@@ -39,21 +69,40 @@ header{
 /********************CARD*****************/
 
 #container{
+    margin-top:2rem;
     display:grid;
-
     grid-template-columns:repeat(4, 1fr);
-    background-color:var(--dark);
+    grid-gap: 1.5rem;
 
 }
 
-
+/*adjust card  width padding and background*/
 .card {
-    text-align: center;
     max-width:240px;
-    max-height:345px;
     margin:0;
     padding:0;
     background-color:white;
-    box-shadow: 1px 1px 1px 1px;
     border-radius:3px;
+    box-sizing: content-box;
+}
+/*Adjusted the different card heights*/
+.man{
+    height:435px;
+}
+
+.horse{
+      height:504px;
+}
+.redhead, .blonde{
+    height:345px
+}
+
+/*adding images to the cards;*/
+div.stars a.star-green{
+    display: inline-block;
+    background-image:url(../img/icons/star_green.png);
+}
+a.star-grey{
+    display: inline-block;
+    background-image:url(../img/icons/star_grey.png);
 }
