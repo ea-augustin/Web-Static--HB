@@ -7,17 +7,19 @@
     --font: 'Open Sans', sans-serif;
     --font-headings: 'Abel', sans-serif;
     --dark: rgb(37, 37, 37);
-    --light: lightgrey;
-    --bg-color : #F2F1F0;
+    --light: #e9e8e8;
+    --light-mid: #c9c5c5;
+    --bg-color: #F2F1F0;
+     --para: #938d8d;
 }
 
 /*--GENERAL FORMATTING FOR THE PAGE--*/
 
 /* ------ For the body and the html ------ */
-html{
-    display:grid;
+html {
+    display: grid;
     justify-content: center;
-    background-color:var(--bg-color);
+    background-color: var(--bg-color);
 }
 
 /*setting for the body content*/
@@ -26,31 +28,33 @@ body {
     font-size: 13px;
     max-width: 960px;
     padding: 0;
-    color:var(--light);
+    color: var(--para);
 
 }
 
 /*setting for all the h1 content*/
-h2{
-    font-size:1rem;
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 /*setting for all paragraphs*/
 p {
-
+   color: var(--para);
 }
 
 /*settings for img*/
-.card > img{
+.card > img {
     width: 100%;
 }
 
 /*****************HEADER***************/
-header{
-    display:grid;
+header {
+    display: grid;
     grid-template-columns:1fr 2fr 1fr;
     align-content: center;
 }
+
 /*settings for the searchbar*/
 #searchBar {
     display: grid;
@@ -59,13 +63,15 @@ header{
 }
 
 /*}apply background color and radius to the search bar*/
-.search{
-      display:grid;
-      background-color:var(--light);
-      justify-items: end;
-      border-radius:3px;
-      height:2rem;
- }
+.search {
+    display: grid;
+    background-color: var(--light);
+    justify-items: end;
+    border-radius: 3px;
+    height: 2rem;
+    border: 1px solid var(--light-mid);
+}
+
 /*Adjusted the images in the search bar*/
 div.search > img {
     align-self: center;
@@ -74,21 +80,21 @@ div.search > img {
 /*Header profile Section*/
 
 /*Parent*/
-div#profileImg{
-    display:grid;
+div#profileImg {
+    display: grid;
     grid-template-columns:1fr 1fr;
     align-items: center;
 }
 
-img.avatar{
+img.avatar {
     justify-self: end;
 }
 
 /********************CARD*****************/
 
-#container{
-    margin-top:2rem;
-    display:grid;
+#container {
+    margin-top: 2rem;
+    display: grid;
     grid-template-columns:repeat(4, 1fr);
     grid-gap: 1.5rem;
 
@@ -96,31 +102,37 @@ img.avatar{
 
 /*adjust card  width padding and background*/
 .card {
-    max-width:240px;
+    max-width: 240px;
     margin:0;
     padding:0;
-    background-color:white;
-    border-radius:3px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 var(--light);
+    border-radius: 3px;
     box-sizing: content-box;
 }
+.card,div,h2,span,p{
+   margin-left:.5rem ;
+}
 /*Adjusted the different card heights*/
-.man{
-    height:435px;
+.man {
+    height: 435px;
 }
 
-.horse{
-      height:504px;
+.horse {
+    height: 504px;
 }
-.redhead, .blonde{
-    height:345px
+
+.redhead, .blonde {
+    height: 345px
 }
 
 /*adding images to the cards;*/
-div.stars a.star-green{
+div.stars a.star-green {
     display: inline-block;
-    background-image:url(../img/icons/star_green.png);
+    background-image: url(../img/icons/star_green.png);
 }
-a.star-grey{
+
+a.star-grey {
     display: inline-block;
-    background-image:url(../img/icons/star_grey.png);
+    background-image: url(../img/icons/star_grey.png);
 }
