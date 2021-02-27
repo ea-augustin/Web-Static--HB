@@ -26,6 +26,7 @@ body {
     font-size: 13px;
     max-width: 960px;
     padding: 0;
+    color:var(--light);
 
 }
 
@@ -50,21 +51,38 @@ header{
     grid-template-columns:1fr 2fr 1fr;
     align-content: center;
 }
-
-#searchBar{
-    display:grid;
-    grid-template-columns:1fr 3fr;
-
+/*settings for the searchbar*/
+#searchBar {
+    display: grid;
+    grid-template-columns:1fr 4fr;
+    align-items: center;
 }
+
+/*}apply background color and radius to the search bar*/
 .search{
-    background-color:var(--light);
+      display:grid;
+      background-color:var(--light);
+      justify-items: end;
+      border-radius:3px;
+      height:2rem;
+ }
+/*Adjusted the images in the search bar*/
+div.search > img {
+    align-self: center;
 }
 
-#profileImg{
+/*Header profile Section*/
+
+/*Parent*/
+div#profileImg{
     display:grid;
     grid-template-columns:1fr 1fr;
+    align-items: center;
 }
 
+img.avatar{
+    justify-self: end;
+}
 
 /********************CARD*****************/
 
