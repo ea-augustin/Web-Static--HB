@@ -53,6 +53,11 @@ header {
     display: grid;
     grid-template-columns:1fr 2fr 1fr;
     align-content: center;
+    background-color:white;
+    padding:10px;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 0 var(--light);
+    border:2px solid var(--light)
 }
 
 /*settings for the searchbar*/
@@ -97,7 +102,7 @@ img.avatar {
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     grid-gap: 1.5rem;
-
+    grid-auto-flow:row;
 }
 
 /*adjust card  width padding and background*/
@@ -107,7 +112,7 @@ img.avatar {
     padding:0;
     background-color: white;
     box-shadow: 0 0 15px 0 var(--light);
-    border-radius: 3px;
+    border-radius: 5px;
     box-sizing: content-box;
 }
 .card,div,h2,span,p{
@@ -135,4 +140,17 @@ div.stars a.star-green {
 a.star-grey {
     display: inline-block;
     background-image: url(../img/icons/star_grey.png);
+}
+
+/*****************FOOTER********************/
+footer{
+    margin-top:5rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    grid-gap: .5rem;
+
+}
+footer img{
+    justify-self:end;
 }
