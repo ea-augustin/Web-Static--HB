@@ -1,0 +1,67 @@
+//Imported Fonts
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat:wght@500&display=swap');
+
+$ft-main: 'Montserrat', sans-serif; // Changed the default texts for the project
+$ft-headings: 'Montserrat', sans-serif;
+
+
+//Colors template used to over ride default colors
+$mdBlue: #386FA4; //Medium Blue
+$dBlue: #133C55; //Dark Blue
+$xlBlue: #84D2F6; //Very Light Blue
+$xxlBlue: #91E5F6; //extra light blue
+$lRed: #F72585; //changed the red tone
+$lBlue: #59A5D8; //Light Blue
+
+//import bootstrap predefined function and and variables inorder to impletment my own color palette
+@import '../../node_modules/bootstrap/scss/_functions.scss';
+@import '../../node_modules/bootstrap/scss/_variables.scss';
+
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "info": $info,
+                        "warning": $warning,
+                        "danger": $danger,
+                        "light": $light,
+                        "dark": $dark,
+                        "mdBlue": #386FA4, //Medium Blue
+                        "dBlue": #133C55, //Dark Blue
+                        "xlBlue": #84D2F6, //Very Light Blue
+                        "xxlBlue": #91E5F6, //extra light blue
+                        "lRed": #F72585, //changed the red tone
+                        "lBlue": #59A5D8 //Light Blue
+                ),
+                $theme-colors
+);
+
+
+
+
+//
+////Created classes for the different colors
+//.bg-dBlue {
+//  background-color: $dBlue;
+//}
+//
+.bg-mdBlue {
+  background-color: $mdBlue;
+}
+//
+//.bg-lBlue {
+//  background-color: $lBlue;
+//}
+//
+//.bg-xlBlue {
+//  background-color: $xlBlue;
+//}
+//
+//.bg-xxlBlue {
+//  background-color: $xxlBlue;
+//}
+//
+//.bg-lRed {
+//  background-color: $lRed;
+//}

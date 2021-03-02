@@ -1,0 +1,13 @@
+//Imported stylesheets:
+@import '_variables.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+//General Settings
+
+//Changed the font and the background color for the entire page
+html {
+  font-family: $ft-main;
+  background-color:$mdBlue;
+}
